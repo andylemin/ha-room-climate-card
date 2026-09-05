@@ -1,0 +1,35 @@
+{
+  "name": "room-climate-card",
+  "version": "0.1.0-dev",
+  "description": "Room-centric climate control card for Home Assistant \u2014 rotary dial, room pages, environment sensors. Daikin first-class.",
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andylemin/ha-room-climate-card.git"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check:bundle": "node scripts/check-bundle.mjs",
+    "check:bundle:update": "node scripts/check-bundle.mjs --update",
+    "typecheck": "tsc --noEmit -p tsconfig.test.json"
+  },
+  "dependencies": {
+    "@mdi/js": "^7.4.47",
+    "lit": "^3.3.0",
+    "superstruct": "^2.0.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.0",
+    "rollup": "^4.30.0",
+    "tslib": "^2.8.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.roo/
+.hass_dev/
+bundle-baseline.json.tmp

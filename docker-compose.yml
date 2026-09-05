@@ -1,0 +1,15 @@
+# Development containers — identical to CI (plan §Phase 3: same containers
+# locally and in GitHub Actions; nothing builds natively on the host).
+#
+#   docker compose run --rm node npm install
+#   docker compose run --rm node npm run build
+#   docker compose run --rm node npm test
+#   ./scripts/deploy.sh              # build + push to the dev HA server
+services:
+  node:
+    image: node:22
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      npm_config_update_notifier: "false"

@@ -1,0 +1,23 @@
+{
+  "card": {
+    "disconnected": "Connection to Home Assistant lost",
+    "unavailable": "Unavailable",
+    "no_rooms": "No rooms configured",
+    "room_empty": "No climate entities found in {room} — assign the device to an area or set `entities:` explicitly",
+    "area_missing": "Area {area} does not exist",
+    "loading_components": "Loading controls…",
+    "error_set_temperature": "Setting temperature failed",
+    "error_set_mode": "Changing mode failed",
+    "power": "Power",
+    "currently": "Currently"
+  },
+  "mode": {
+    "off": "Off",
+    "heat": "Heat",
+    "cool": "Cool",
+    "heat_cool": "Heat/Cool",
+    "auto": "Auto",
+    "dry": "Dry",
+    "fan_only": "Fan"
+  }
+}

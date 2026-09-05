@@ -1,0 +1,19 @@
+# Same container as local development (docker-compose.yml) — plan §Phase 3.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    container: node:22
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm test
+      - run: npm run check:bundle
